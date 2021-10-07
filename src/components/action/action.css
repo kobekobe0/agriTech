@@ -1,0 +1,19 @@
+.action {
+    margin: 1.2rem;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.action .actionCategory {
+    display: flex;
+    flex-direction: column;
+}
+.action .actionCategory h2 {
+    font-size: 15px;
+}
+
+.action .container {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 3px;
+}
