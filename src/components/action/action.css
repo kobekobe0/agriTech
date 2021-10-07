@@ -13,7 +13,8 @@
 }
 
 .action .container {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
     padding: 3px;
+    font-family: 'Roboto', sans-serif;
 }
