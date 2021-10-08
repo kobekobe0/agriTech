@@ -5,7 +5,6 @@ import { motion } from 'framer-motion'
 function analytics() {
     return (
         <motion.div
-            className="itemContainer"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
