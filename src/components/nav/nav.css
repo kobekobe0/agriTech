@@ -1,5 +1,5 @@
 .nav {
-    background-color: rgb(217, 233, 255);
+    background-color: rgb(253, 253, 253);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,6 +15,15 @@
     display: flex;
 }
 
+.nav a h2,
+svg,
+path {
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 500;
+    margin: 3px;
+}
+
 .nav a {
     list-style: none;
     text-decoration: none;
@@ -23,15 +32,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: rgb(32, 32, 32) 4px solid;
+    border-bottom: rgb(32, 32, 32) 2px solid;
     width: 80px;
     height: 70px;
-}
-
-.nav a h2,
-path {
-    color: black;
-    font-size: 15px;
-    font-weight: 500;
-    margin: 3px;
 }
