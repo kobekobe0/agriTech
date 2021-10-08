@@ -1,5 +1,6 @@
 import React from 'react'
 import { CgProfile } from 'react-icons/cg'
+import { FaUserCircle } from 'react-icons/fa'
 import './header.css'
 import { Link, useLocation } from 'react-router-dom'
 
@@ -12,7 +13,7 @@ function Header() {
             {location.pathname == '/action' ? <h1>Actions</h1> : null}
             {location.pathname == '/analytics' ? <h1>Analytics</h1> : null}
             {location.pathname == '/marketplace' ? <h1>Marketplace</h1> : null}
-            <CgProfile size={40} style={{ fill: 'gray' }} />
+            <FaUserCircle size={50} style={{ fill: 'gray' }} />
         </div>
     )
 }

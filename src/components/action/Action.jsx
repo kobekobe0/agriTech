@@ -9,20 +9,13 @@ function Action() {
         'Lorem Ipsum Dolor',
         'Mockup text',
         'Mockup text',
-        'Lorem Ipsum Dolor',
     ])
     const [yesterday, setYesterday] = useState([
-        'yesterdaysdsd task',
-        'yesterdasday tassdsk',
-        'yestersdsday task',
-        'yesterday tadsdsk',
-        'yestedasdasdrday task',
-        'yestday task',
-        'yesterday tasadassk',
+        'Yesterdaysdsd task',
+        'Yesterdasday tassdsk',
+        'Yestersdsday task',
     ])
     const [lastWeek, setLastWeek] = useState([
-        'Last week task',
-        'Last week task',
         'Last week task',
         'Last week task',
         'Last week task',
@@ -40,28 +33,27 @@ function Action() {
                 {today.map((text) => (
                     <label class="container">
                         <input type="checkbox" checked="" />
-                        <span class="checkmark"></span>
-                        {text}
+                        <label htmlFor="checkbox">{text}</label>
                     </label>
                 ))}
             </div>
+            <hr />
             <div className="actionCategory">
                 <h2>Yesterday</h2>
                 {yesterday.map((text) => (
                     <label class="container">
                         <input type="checkbox" checked="" />
-                        <span class="checkmark"></span>
-                        {text}
+                        <label htmlFor="checkbox">{text}</label>
                     </label>
                 ))}
             </div>
+            <hr />
             <div className="actionCategory">
                 <h2>Last Week</h2>
                 {lastWeek.map((text) => (
                     <label class="container">
-                        <input type="checkbox" checked="" />
-                        <span class="checkmark"></span>
-                        {text}
+                        <input type="checkbox" checked="checked" />
+                        <label htmlFor="checkbox">{text}</label>
                     </label>
                 ))}
             </div>

@@ -6,6 +6,7 @@ import Home from './components/home/Home'
 import Action from './components/action/Action'
 import analytics from './components/analytics/analytics'
 import './app.css'
+import Marketplace from './components/marketplace/Marketplace'
 function App() {
     return (
         <Router>
@@ -15,7 +16,12 @@ function App() {
                     <Switch>
                         <Route exact path="/" component={Home} />
                         <Route exact path="/action" component={Action} />
-                        <Route exact path="/Analytics" component={analytics} />
+                        <Route exact path="/analytics" component={analytics} />
+                        <Route
+                            exact
+                            path="/marketplace"
+                            component={Marketplace}
+                        />
                     </Switch>
                 </div>
                 <Nav />

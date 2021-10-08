@@ -22,7 +22,7 @@ function Nav() {
                     borderBottom:
                         location.pathname == '/'
                             ? 'rgb(26,174,159) 2px solid'
-                            : 'black 2px solid',
+                            : 'dimgray 2px solid',
                 }}
             >
                 <BsMapFill
@@ -31,7 +31,7 @@ function Nav() {
                         fill:
                             location.pathname == '/'
                                 ? 'rgb(26,174,159)'
-                                : 'black',
+                                : 'dimgray',
                     }}
                 />
                 <h2
@@ -39,7 +39,7 @@ function Nav() {
                         color:
                             location.pathname == '/'
                                 ? 'rgb(26,174,159)'
-                                : 'black',
+                                : 'dimgray',
                         fontWeight: location.pathname == '/' ? 'bold' : 'unset',
                     }}
                 >
@@ -52,7 +52,7 @@ function Nav() {
                     borderBottom:
                         location.pathname == '/action'
                             ? 'rgb(26,174,159) 2px solid'
-                            : 'black 2px solid',
+                            : 'dimgray 2px solid',
                 }}
             >
                 <FaTractor
@@ -61,7 +61,7 @@ function Nav() {
                         fill:
                             location.pathname == '/action'
                                 ? 'rgb(26,174,159)'
-                                : 'black',
+                                : 'dimgray',
                     }}
                 />
                 <h2
@@ -69,7 +69,7 @@ function Nav() {
                         color:
                             location.pathname == '/action'
                                 ? 'rgb(26,174,159)'
-                                : 'black',
+                                : 'dimgray',
                         fontWeight:
                             location.pathname == '/action' ? 'bold' : 'unset',
                     }}
@@ -83,11 +83,11 @@ function Nav() {
                     borderBottom:
                         location.pathname == '/analytics'
                             ? 'rgb(26,174,159) 2px solid'
-                            : 'black 2px solid',
+                            : 'dimgray 2px solid',
                     color:
                         location.pathname == '/analytics'
                             ? 'rgb(26,174,159)'
-                            : 'black',
+                            : 'dimgray',
                 }}
             >
                 <AiOutlineAreaChart
@@ -96,7 +96,7 @@ function Nav() {
                         fill:
                             location.pathname == '/analytics'
                                 ? 'rgb(26,174,159)'
-                                : 'black',
+                                : 'dimgray',
                     }}
                 />
                 <h2
@@ -104,7 +104,7 @@ function Nav() {
                         color:
                             location.pathname == '/analytics'
                                 ? 'rgb(26,174,159)'
-                                : 'black',
+                                : 'dimgray',
                         fontWeight:
                             location.pathname == '/analytics'
                                 ? 'bold'
@@ -120,11 +120,11 @@ function Nav() {
                     borderBottom:
                         location.pathname == '/marketplace'
                             ? 'rgb(26,174,159) 2px solid'
-                            : 'black 2px solid',
+                            : 'dimgray 2px solid',
                     color:
                         location.pathname == '/analytics'
                             ? 'rgb(26,174,159)'
-                            : 'black',
+                            : 'dimgray',
                 }}
             >
                 <FaStoreSlash
@@ -133,7 +133,7 @@ function Nav() {
                         fill:
                             location.pathname == '/marketplace'
                                 ? 'rgb(26,174,159)'
-                                : 'black',
+                                : 'dimgray',
                     }}
                 />
                 <h2
@@ -141,14 +141,14 @@ function Nav() {
                         color:
                             location.pathname == '/marketplace'
                                 ? 'rgb(26,174,159)'
-                                : 'black',
+                                : 'dimgray',
                         fontWeight:
                             location.pathname == '/marketplace'
                                 ? 'bold'
                                 : 'unset',
                     }}
                 >
-                    Analytics
+                    Marketplace
                 </h2>
             </Link>
         </motion.div>

@@ -14,7 +14,17 @@
 
 .action .container {
     font-size: 17px;
-    font-weight: 400;
-    padding: 3px;
-    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.action .container label {
+    margin-left: 6px;
+}
+.action .container input {
+    height: 20px;
+    width: 20px;
 }
