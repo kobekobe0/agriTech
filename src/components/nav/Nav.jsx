@@ -2,7 +2,7 @@ import React from 'react'
 import './nav.css'
 import { Link, useLocation } from 'react-router-dom'
 import { BsMapFill } from 'react-icons/bs'
-import { FaTractor } from 'react-icons/fa'
+import { FaTractor, FaStoreSlash } from 'react-icons/fa'
 import { AiOutlineAreaChart } from 'react-icons/ai'
 import { motion } from 'framer-motion'
 function Nav() {
@@ -21,16 +21,24 @@ function Nav() {
                 style={{
                     borderBottom:
                         location.pathname == '/'
-                            ? 'rgb(105, 0, 131) 2px solid'
+                            ? 'rgb(26,174,159) 2px solid'
                             : 'black 2px solid',
                 }}
             >
-                <BsMapFill size={21} />
+                <BsMapFill
+                    size={18}
+                    style={{
+                        fill:
+                            location.pathname == '/'
+                                ? 'rgb(26,174,159)'
+                                : 'black',
+                    }}
+                />
                 <h2
                     style={{
                         color:
                             location.pathname == '/'
-                                ? 'rgb(105, 0, 131)'
+                                ? 'rgb(26,174,159)'
                                 : 'black',
                         fontWeight: location.pathname == '/' ? 'bold' : 'unset',
                     }}
@@ -43,16 +51,24 @@ function Nav() {
                 style={{
                     borderBottom:
                         location.pathname == '/action'
-                            ? 'rgb(105, 0, 131) 2px solid'
+                            ? 'rgb(26,174,159) 2px solid'
                             : 'black 2px solid',
                 }}
             >
-                <FaTractor size={27} />
+                <FaTractor
+                    size={23}
+                    style={{
+                        fill:
+                            location.pathname == '/action'
+                                ? 'rgb(26,174,159)'
+                                : 'black',
+                    }}
+                />
                 <h2
                     style={{
                         color:
                             location.pathname == '/action'
-                                ? 'rgb(105, 0, 131)'
+                                ? 'rgb(26,174,159)'
                                 : 'black',
                         fontWeight:
                             location.pathname == '/action' ? 'bold' : 'unset',
@@ -66,23 +82,68 @@ function Nav() {
                 style={{
                     borderBottom:
                         location.pathname == '/analytics'
-                            ? 'rgb(105, 0, 131) 2px solid'
+                            ? 'rgb(26,174,159) 2px solid'
                             : 'black 2px solid',
                     color:
                         location.pathname == '/analytics'
-                            ? 'rgb(105, 0, 131)'
+                            ? 'rgb(26,174,159)'
                             : 'black',
                 }}
             >
-                <AiOutlineAreaChart size={27} />
+                <AiOutlineAreaChart
+                    size={23}
+                    style={{
+                        fill:
+                            location.pathname == '/analytics'
+                                ? 'rgb(26,174,159)'
+                                : 'black',
+                    }}
+                />
                 <h2
                     style={{
                         color:
                             location.pathname == '/analytics'
-                                ? 'rgb(105, 0, 131)'
+                                ? 'rgb(26,174,159)'
                                 : 'black',
                         fontWeight:
                             location.pathname == '/analytics'
+                                ? 'bold'
+                                : 'unset',
+                    }}
+                >
+                    Analytics
+                </h2>
+            </Link>
+            <Link
+                to="/marketplace"
+                style={{
+                    borderBottom:
+                        location.pathname == '/marketplace'
+                            ? 'rgb(26,174,159) 2px solid'
+                            : 'black 2px solid',
+                    color:
+                        location.pathname == '/analytics'
+                            ? 'rgb(26,174,159)'
+                            : 'black',
+                }}
+            >
+                <FaStoreSlash
+                    size={23}
+                    style={{
+                        fill:
+                            location.pathname == '/marketplace'
+                                ? 'rgb(26,174,159)'
+                                : 'black',
+                    }}
+                />
+                <h2
+                    style={{
+                        color:
+                            location.pathname == '/marketplace'
+                                ? 'rgb(26,174,159)'
+                                : 'black',
+                        fontWeight:
+                            location.pathname == '/marketplace'
                                 ? 'bold'
                                 : 'unset',
                     }}

@@ -8,10 +8,11 @@ function Header() {
     console.log(location.pathname)
     return (
         <div className="header">
-            {location.pathname == '/' ? <h1>Map</h1> : null}
-            {location.pathname == '/action' ? <h1>Tasks</h1> : null}
+            {location.pathname == '/' ? <h1>My Farm</h1> : null}
+            {location.pathname == '/action' ? <h1>Actions</h1> : null}
             {location.pathname == '/analytics' ? <h1>Analytics</h1> : null}
-            <CgProfile size={40} />
+            {location.pathname == '/marketplace' ? <h1>Marketplace</h1> : null}
+            <CgProfile size={40} style={{ fill: 'gray' }} />
         </div>
     )
 }
